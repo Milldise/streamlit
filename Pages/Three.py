@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-class Project3:
+class Three:
     def __init__(self):
         pass
 
@@ -86,5 +86,5 @@ class Project3:
         </style>""", unsafe_allow_html=True)
 
 if __name__ == '__main__':
-    project = Project3()
+    project = Three()
     project.app()

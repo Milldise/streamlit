@@ -4,37 +4,38 @@ from streamlit_navigation_bar import st_navbar as navbar
 from PIL import Image
 import pandas as pd
 import numpy as np
-
+from streamlit_lottie import st_lottie
+import requests
 
 image = Image.open('img/alien.png')
 logo_path = "img/american.svg"
+
+
 
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 pages = ['Home', 'One', 'Two', 'Three']
 
 styles = {
     "nav": {
-        "background-color": "royalblue",
+        "background-color": "lightgray",
         "display": "flex",
         "justify-content": "center"
     },
     "img": {
         "position": "absolute",
-        "left": "-20px",
-        "font-size": "15px",
-        "top": "4px",
-        "width": "100px",
-        "height": "40px",
-
+        "left": "200px",
+        "top": "1px",
+        "width": "300px",
+        "height": "45px",
     },
     "span": {
-        "display": "block",
-        "color": "white",
+        "display": "inline-block",
+        "color": "black",
         "padding": "0.2rem 0.725rem",
         "font-size": "14px"
     },
     "active": {
-        "background-color": "white",
+        "background-color": "mediumpurple",
         "color": "black",
         "font-weight": "normal",
         "padding": "14px"
@@ -53,4 +54,3 @@ elif page == 'Three':
     Three.Three().app()
 else:
     Home.Home().app()
-    st.title('hello')
